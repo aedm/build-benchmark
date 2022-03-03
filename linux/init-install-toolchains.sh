@@ -30,6 +30,8 @@ sudo apt install openjdk-11-jdk -y
 
 # Install Node.js
 sudo apt install nodejs -y
+node --version
+npm --version
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 set +x
 echo ". $HOME/.nvm/nvm.sh && nvm install 16.13.1" | sudo sh -s
