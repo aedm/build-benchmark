@@ -9,7 +9,7 @@ sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt update
 
 # Basics
-sudo apt install build-essential -y
+sudo apt install build-essential unzip -y
 
 # Prevent WSL to inherit Windows %PATH%
 sudo echo """
@@ -27,6 +27,12 @@ echo 'PATH="$PATH:/usr/local/go/bin"' >>$HOME/.bashrc
 
 # Install Java 11
 sudo apt install openjdk-11-jdk -y
+
+# Install Gradle
+curl -L https://services.gradle.org/distributions/gradle-7.4-bin.zip --output gradle-7.4-bin.zip
+sudo mkdir /opt/gradle
+sudo unzip -d /opt/gradle gradle-7.4-bin.zip
+echo 'PATH=$PATH:/opt/gradle/gradle-7.4/bin' >>$HOME/.bashrc
 
 # Install Node.js
 sudo apt install nodejs -y

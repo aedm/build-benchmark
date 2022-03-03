@@ -2,7 +2,7 @@
 
 set -x
 pushd ~/bench/jest
-rm -rf dist
+yarn build-clean
 time yarn build
 popd
 
