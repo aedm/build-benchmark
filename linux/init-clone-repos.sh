@@ -2,7 +2,7 @@
 
 set -x
 
-md ~/bench
+mkdir ~/bench
 pushd ~/bench
 
 git clone --depth 1 --branch v0.92.0 https://github.com/gohugoio/hugo.git
