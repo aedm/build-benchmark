@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # This script installs build toolchains on a fresh Ubuntu instance. 
-# Run it with sudo.
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
 
 set -x
 
