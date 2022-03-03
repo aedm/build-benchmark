@@ -32,6 +32,5 @@ sudo apt install openjdk-11-jdk -y
 sudo apt install nodejs -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 set +x
-. ~/.nvm/nvm.sh
-sudo nvm install 16.13.1
+echo ". $HOME/.nvm/nvm.sh && nvm install 16.13.1" | sudo sh -s
 sudo npm install --global yarn@1.22.17
