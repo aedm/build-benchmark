@@ -22,7 +22,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --defaul
 
 # Install Go
 sudo rm -rf /usr/local/go 
-sudo curl -L https://go.dev/dl/go1.17.5.linux-amd64.tar.gz | tar -C /usr/local -xz
+sudo curl -L https://go.dev/dl/go1.17.5.linux-amd64.tar.gz | sudo tar -C /usr/local -xz
 echo 'PATH="$PATH:/usr/local/go/bin"' >>$HOME/.bashrc
 
 # Install Java 11
