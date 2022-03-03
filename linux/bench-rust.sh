@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x
-cd bat
+pushd ~/bench/bat
 cargo clean
 time cargo build
-cd -
+popd

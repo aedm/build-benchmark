@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -x
-cd jest
+pushd ~/bench/jest
 rm -rf dist
 time yarn build
-cd -
+popd
 

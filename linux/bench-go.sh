@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x
-cd hugo
+pushd ~/bench/hugo
 go clean -cache
 time go build
-cd -
+popd
