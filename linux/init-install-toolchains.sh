@@ -5,7 +5,7 @@
 set -x
 
 # Adds Node.js 16.x to apt sources
-sudo curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt update
 
 # Basics
