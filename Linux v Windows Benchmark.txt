@@ -5,9 +5,9 @@ Go 1.17.5
 - go build
 
 
-Node 16.13.1 & Npm 8.1.2
+Node 16.13.1 & Npm 8.1.2 & Yarn 1.22.17
 - React
-- git checkout tags/v17.0.2
+- git checkout tags/v18.0.0
 
 
 Rust 1.58.1
