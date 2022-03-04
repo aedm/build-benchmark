@@ -12,10 +12,10 @@ sudo apt update
 sudo apt install build-essential unzip -y
 
 # Prevent WSL to inherit Windows %PATH%
-sudo echo """
+echo """
 [interop]
 appendWindowsPath=false
-""" >>/etc/wsl.conf
+""" | sudo tee -a /etc/wsl.conf
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.59.0
