@@ -1,6 +1,6 @@
 # Benchmarking Java, Rust, Go and Node build times on Windows, WSL and Linux
 
-This repository contains code I used to write an article comparing build times.
+This repository contains code I used to write an article comparing build times. Read the article here: https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6
 
 ## Set up tests on Linux
 
