@@ -1,15 +1,27 @@
-Go 1.17.5
-- hugo
+# Benchmarking Java, Rust, Go and Node build times on Windows, WSL and Linux
 
+This repository contains code I used to write an article comparing build times.
 
-Node 16.13.1 & Npm 8.1.2 & Yarn 1.22.17
-- Jest
+## Set up tests on Linux
 
+Start with a fresh Ubuntu.
 
-Rust 1.58.1
-- bat
-- windows: gcc 11.2.0, Wsl: gcc 9.3.0
+1. Run `linux/init-install-toolchains.sh`. This will install all tools needed.
+1. Open a new Bash.
+1. Run `linux/init-clone-repos.sh`. This will git clone the test projects into `~/bench`.
+1. Run every `linux/bench-*.sh` script to download dependencies.
+1. Turn off networking.
 
+## Set up tests on Windows
 
-Java OpenJDK 11.0.13
-- https://github.com/ReactiveX/RxJava.git
+1. Install tools manually. Sorry.
+1. Go to the `windows` directory.
+1. Run `init-clone-repos.ps1`. This will git clone the test projects into the current folder.
+1. Run every `bench-*.sh` script to download dependencies.
+1. Turn off networking.
+
+### Running a test
+
+1. Restart the machine.
+1. Run a `bench-*` script to run a benchmark with cold file cache.
+1. Run the same script again to get the result with a hot file cache.
